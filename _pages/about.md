@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-<!-- description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc. -->
+description: economist | engineer
 
 profile:
   align: right
@@ -17,4 +17,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a PhD student in economics at the University of British Columbia. My research interests lie at the intersection of environmental economics, industrial organization, and macroeconomics. 
+I am currently a PhD student in economics at the University of British Columbia. My research interests lie at the intersection of environmental economics, industrial organization, and macroeconomics.
