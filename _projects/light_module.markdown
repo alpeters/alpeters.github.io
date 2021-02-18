@@ -29,7 +29,7 @@ importance: 1
     And then there was light.
 </div>
 
-As an R&D engineer at Preciflex SA I invented the industry-first light module that illuminates HYT's fluidic watches using mechanical energy. At the push of a button, a dedicated spring barrel spins a micro-generator at incredibly high speed to power light emitting diodes that bring the watch face to life. The module is currently employed in the <a href="https://www.hytwatches.com/model/flow-blue-fluid" target="blank">HYT FLOW</a>.
+As an R&D engineer at Preciflex SA I invented the patented, industry-first light module that illuminates HYT's fluidic watches using mechanical energy. At the push of a button, a dedicated spring barrel spins a micro-generator at incredibly high speed to power light emitting diodes that bring the watch face to life. The module is currently employed in the <a href="https://www.hytwatches.com/model/flow-blue-fluid" target="blank">HYT FLOW</a>.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
