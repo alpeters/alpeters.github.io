@@ -17,4 +17,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a PhD student in economics at the University of British Columbia. My research interests lie at the intersection of environmental economics, industrial organization, and macroeconomics.
+I am currently a PhD student in economics at the Vancouver School of Economics (UBC). My research interests lie at the intersection of environmental economics, industrial organization, and macroeconomics. I am seeking to improve our understanding of the factors that influence technological innovation and adoption in order to develop strategies to reduce the negative impacts of economic activity on the natural environment.
+
+In a previous life I was a microtechnology engineer specializing in micro-fludic devices.
