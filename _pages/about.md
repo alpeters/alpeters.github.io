@@ -19,4 +19,4 @@ social: true  # includes social icons at the bottom of the page
 
 I am currently a PhD student at the Vancouver School of Economics (UBC). My research interests lie at the intersection of environmental economics, industrial organization, and macroeconomics. I am seeking to contribute to our understanding of the factors that influence technological innovation and adoption in order to develop strategies to reduce the negative impacts of economic activity on the natural environment.
 
-In a previous life I was a microtechnology engineer specializing in micro-fludic devices.
+In a previous life I was a microtechnology engineer specializing in micro-fluidic devices.
