@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: creations
+permalink: /creations/
+description: A collection of things I have created.
 nav: true
 ---
 
