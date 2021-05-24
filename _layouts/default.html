@@ -6,22 +6,22 @@
     {% include scripts/mathjax.html %}
   </head>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
-    <!-- Header -->
-
-    {% include header.html %}
-
-    <!-- Content -->
-
-    <div class="container mt-5">
-      {{ content }}
+  <body>
+    <div class="row d-flex flex-row">
+      <div class="col-3">
+        {% include header.html %}
+      </div>
+      <div class="col-9">
+        <div class="content-col">
+          <div id="content" class="flex-grow-1">
+            {{ content }}
+          </div>
+          <div>
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Footer -->
-
-    {% include footer.html %}
-
   </body>
 
   {% include scripts/bootstrap.html %}

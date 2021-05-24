@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-02-17 19:55:00-0400
+date: 2021-05-24 16:00:00-0001
 inline: true
 ---
 
-Coming online soon!
+Revamped layout. Will fix mobile portrait mode soon!

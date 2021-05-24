@@ -40,6 +40,7 @@ a, table.table a {
 
 .profile {
   margin-left: 1rem;
+  margin-right: 1rem;
   width: 100%;
 
   .address {
@@ -75,42 +76,77 @@ a, table.table a {
   }
 }
 
-
 // Navbar customization
-
 .navbar {
+  position: fixed;
+  height: 100vh;
+  // width: 20%;
   box-shadow: none;
-  border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
   background-color: var(--global-bg-color);
+  background-image: url("/assets/img/profile_beach.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding: 3%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .navbar-menu{
+    // position: absolute;
+    // top: 5%;
+    // align-items: flex-start;
+    justify-content: left;
+    z-index: 1100;
+  }
+  .navbar-foot {
+    // text-align: left;
+    // position: absolute;
+    // bottom: 5%;
+    justify-content: center;
+    z-index: 1050;
+    // align-items: flex-end;
+  }
 }
-.navbar.navbar-light {
-  // Remove link decoration
-  a {
+
+.navbar-light {
+  a{
+    color: var(--global-image-text-color);
     &:hover {
       text-decoration: none;
     }
-  }
-  .navbar-brand {
-    color: var(--global-text-color);
-  }
-  .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
+    .title {
+      color: var(--global-image-text-color);
+      font-weight: bold;
     }
   }
-  .navbar-nav .nav-item.active>.nav-link {
+
+  p {
+    color: var(--global-image-text-color);
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+  .navbar-nav .nav-item.active .nav-link {
       background-color: inherit;
       font-weight: bolder;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
+        font-weight: bolder;
       }
   }
   .contact-icon {
     font-size: 2rem;
     a {
+      color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
       }
@@ -118,41 +154,155 @@ a, table.table a {
   }
 }
 
-.navbar-toggler {
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: var(--global-icon-color);
-    border-radius: 1px;
-    margin-bottom: 4px;
-    transition: all 0.2s;
-  }
-  .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-  }
-  .middle-bar {
-    opacity: 0;
-  }
-  .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-  }
+// .navbar-toggler {
+//   .icon-bar {
+//     display: block;
+//     width: 22px;
+//     height: 2px;
+//     background-color: var(--global-icon-color);
+//     border-radius: 1px;
+//     margin-bottom: 4px;
+//     transition: all 0.2s;
+//   }
+//   .top-bar {
+//     transform: rotate(45deg);
+//     transform-origin: 10% 10%;
+//   }
+//   .middle-bar {
+//     opacity: 0;
+//   }
+//   .bottom-bar {
+//     transform: rotate(-45deg);
+//     transform-origin: 10% 90%;
+//   }
+// }
+//
+// .navbar-toggler.collapsed {
+//   .top-bar {
+//     transform: rotate(0);
+//   }
+//   .middle-bar {
+//     opacity: 1;
+//   }
+//   .bottom-bar {
+//     transform: rotate(0);
+//   }
+// }
+
+// // Side Bar
+// .wrapper {
+// display: flex;
+// text-decoration: none;
+// transition: all 0.4s;
+// }
+//
+// #sidebar {
+// min-width: 250px;
+// max-width: 250px;
+// background: #262933;
+// // background: url(asset_path(../assets/img/profile_beach.jpg));
+// color: #fff;
+// transition: all 0.4s;
+// height: 100vh;
+// }
+//
+// #sidebar.active {
+// margin-left: -250px;
+// }
+//
+// #sidebar .sidebar-header {
+// padding: 40px;
+// background: #1b1d24;
+// }
+//
+// #sidebar ul.components {
+// padding: 20px 0;
+// /* border-bottom: 1px solid #47748b; */
+// }
+//
+// #sidebar ul p {
+// color: #fff;
+// padding: 10px;
+// }
+//
+// #sidebar ul li a {
+// padding: 10px;
+// font-size: 1.1em;
+// display: block;
+// }
+//
+// #sidebar ul li a:hover {
+// color: #262933;
+// background: #fff;
+// }
+//
+// #sidebar ul li.active>a,
+// a[aria-expanded="true"] {
+// color: #fff;
+// background: #1b1d24;
+// }
+//
+// a[data-toggle="collapse"] {
+// position: relative;
+// }
+//
+// .dropdown-toggle::after {
+// display: block;
+// position: absolute;
+// top: 50%;
+// right: 20%;
+// transform: translateY(-50%);
+// }
+
+// Body column
+.content-col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10%;
+  padding-bottom: 3%;
+  flex: 1 1 0;
+  overflow: auto;
 }
 
-.navbar-toggler.collapsed {
-  .top-bar {
-    transform: rotate(0);
-  }
-  .middle-bar {
-    opacity: 1;
-  }
-  .bottom-bar {
-    transform: rotate(0);
-  }
+ul ul a {
+font-size: 0.9em !important;
+padding-left: 30px !important;
+background: #1b1d24;
+text-align: right;
 }
 
+#content {
+// width: 100%;
+// padding: 20px;
+// padding-left: 20%;
+// min-width: height 100vh;
+transition: all 0.4s;
+}
+
+#content h2 {
+text-align: left;
+margin-bottom: 50px;
+}
+
+#content p {
+text-align: justify;
+}
+
+// @media (max-width: 768px) {
+// #sidebar {
+//   margin-left: -250px;
+// }
+//
+// #sidebar.active {
+//   margin-left: 0;
+// }
+//
+// #sidebarCollapse span {
+//   display: none;
+// }
+// }
 
 // News
 
@@ -172,7 +322,7 @@ a, table.table a {
   .contact-icon {
     font-size: 4rem;
     a {
-      color: var(--global-icon-color);
+      color: var(--global-text-color);
       &:hover {
         color: var(--global-theme-color);
       }
@@ -185,28 +335,16 @@ a, table.table a {
 
 
 // Footer
-footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
-  .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
-  }
-  a {
-    color: var(--global-footer-link-color);
-    &:hover {
-      color: pink;
-      text-decoration: none;
-    }
-  }
-}
-
-footer.sticky-bottom {
+footer {
+  // position: absolute;
+  // bottom: 1%;
   border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.7rem;
+  a {
+    color: inherit;
+  }
 }
 
 
@@ -282,7 +420,8 @@ footer.sticky-bottom {
     width: 250px;
     margin-bottom: 10px;
     a {
-      color: black;
+      color: var(--global-image-text-color);
+      // black;
       text-decoration: none;
       &:hover {
         color: var(--global-theme-color);
@@ -358,7 +497,7 @@ footer.sticky-bottom {
               text-decoration: none;
           }
         }
-        > em {
+        em {
           border-bottom: 1px solid;
           font-style: normal;
         }
