@@ -2,7 +2,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-nav">
       <div class="navbar-menu">
         {% if page.title != "about" %}
-        <h4><a href="{{ site.baseurl | prepend: site.url }}/">
+        <h4><a href="{{ site.url }}/">
          {% if site.title == blank %}{{ site.title }}{% else %}<span class="title">{{ site.first_name }}</span> {{ site.last_name }}{% endif %}
         </a></h4>
         <p>{{ site.description }}</p>
