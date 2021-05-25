@@ -25,6 +25,8 @@ $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
 $yellow-color:        #efcc00 !default;
 
+$blue-grey-color:      #283046   !default;
+$blue-grey-color-darker: darken($blue-grey-color, 5%);
 $grey-color:          #828282 !default;
 $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
@@ -33,3 +35,12 @@ $grey-color-dark-lighter: lighten($grey-color-dark, 5%);
 $white-color: #ffffff !default;
 $white-color-darker: darken($white-color, 5%);
 $black-color: #000000 !default;
+
+$blue-color-light: rgba(102, 178, 255, 0.3);
+$blue-color-light-darker: rgba(40, 48, 70, 0.5);
+// rgba(255, 178, 102, 0.15);
+// rgba(255, 128, 0, 0.15);
+// rgba(0, 0, 0, 0.2);
+//rgba(0, 0, 204, 0.3);
+
+$navbar-width: 3/12*100% //fraction of 12

@@ -13,6 +13,9 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-icon-color: #{$grey-color-dark};
+  --global-mask-color: #{$blue-color-light};
+
+  --global-navbar-width: #{$navbar-width};
 
   .fa-sun {
     display : none;
@@ -25,16 +28,17 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
-  --global-card-color: #{$grey-color-dark-lighter};
+  --global-bg-color: #{$blue-grey-color};
+  --global-card-color: #{$blue-grey-color-darker};
   --global-text-color: #{$grey-color-light};
-  --global-image-text-color: #{$grey-color-dark};
+  --global-image-text-color: #{$grey-color-light};
   --global-theme-color: #{$orange-color};
   --global-hover-color: #{$orange-color-light};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-icon-color: #{$white-color};
+  --global-mask-color: #{$blue-color-light-darker};
 
   .fa-sun {
     padding-left: 10px;

@@ -77,12 +77,14 @@ a, table.table a {
 }
 
 // Navbar customization
-.navbar {
+.col-width {
+  width: var(--global-navbar-width);
+}
+
+.bg-image {
   position: fixed;
   height: 100vh;
-  // width: 20%;
-  box-shadow: none;
-  background-color: var(--global-bg-color);
+  min-width: var(--global-navbar-width);
   background-image: url("/assets/img/profile_beach.jpg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -90,26 +92,29 @@ a, table.table a {
   -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  padding: 3%;
+}
+
+.navbar {
+  // position: fixed;
+  height: 100vh;
+  width: inherit;
+  background-color: var(--global-mask-color);
+  box-shadow: none;
+  padding: 5%;
+  padding-left: 10%;
+  padding-top: 10%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
 
-  .navbar-menu{
-    // position: absolute;
-    // top: 5%;
-    // align-items: flex-start;
-    justify-content: left;
-    z-index: 1100;
-  }
   .navbar-foot {
     // text-align: left;
     // position: absolute;
     // bottom: 5%;
     justify-content: center;
-    z-index: 1050;
+    // z-index: 1050;
     // align-items: flex-end;
   }
 }
@@ -130,20 +135,18 @@ a, table.table a {
     color: var(--global-image-text-color);
   }
 
-  .navbar-nav .nav-item .nav-link {
+  .nav-item .nav-link {
+    color: var(--global-image-text-color);
     &:hover {
-      font-weight: bolder;
+      // font-weight: bolder;
+      color: var(--global-theme-color);
     }
   }
-  .navbar-nav .nav-item.active .nav-link {
-      background-color: inherit;
-      font-weight: bolder;
+
+  .nav-item.active .nav-link {
       color: var(--global-theme-color);
-      &:hover {
-        color: var(--global-hover-color);
-        font-weight: bolder;
-      }
   }
+
   .contact-icon {
     font-size: 2rem;
     a {
