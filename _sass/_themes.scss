@@ -4,6 +4,7 @@
 
 :root {
   --global-bg-color: #{$white-color};
+  --global-card-color: #{$white-color-darker};
   --global-text-color: #{$black-color};
   --global-image-text-color: #{$black-color};
   --global-theme-color: #{$orange-color};
@@ -25,6 +26,7 @@
 
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
+  --global-card-color: #{$grey-color-dark-lighter};
   --global-text-color: #{$grey-color-light};
   --global-image-text-color: #{$grey-color-dark};
   --global-theme-color: #{$orange-color};
