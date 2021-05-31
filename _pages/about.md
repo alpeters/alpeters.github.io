@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description:
+description: economist | engineer
 
 profile:
   align: right
