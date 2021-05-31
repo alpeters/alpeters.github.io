@@ -7,19 +7,13 @@
   </head>
 
   <body>
-    <div class="row">
-      <div class="col-width">
-        {% include header.html %}
+    {% include header.html %}
+    <div class="content-col">
+      <div id="content">
+        {{ content }}
       </div>
-      <div class="col">
-        <div class="content-col">
-          <div id="content" class="flex-grow-1">
-            {{ content }}
-          </div>
-          <div>
-            {% include footer.html %}
-          </div>
-        </div>
+      <div>
+        {% include footer.html %}
       </div>
     </div>
   </body>

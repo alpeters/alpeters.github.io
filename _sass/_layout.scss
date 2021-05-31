@@ -3,18 +3,86 @@
  ******************************************************************************/
 
 body {
-    // max-width: 100%;
+    overflow-y: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     color: var(--global-text-color);
     background-color: var(--global-bg-color);
 }
 
-// .container {
-//   // max-width: $max-content-width;
-// }
-
-// Profile
-.profile {
-  img {
-    width: 100%;
+@media (min-width: 600px) {
+  body {
+    flex-direction: row;
   }
+
+  .navbar-bg {
+    height: 100vh;
+    background-image: url("/assets/img/profile_beach.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+}
+
+.navbar-bg {
+  flex-grow: 2;
+  // flex-shrink: 1;
+  // flex-basis: 40%;
+  // min-width: var(--global-navbar-width);
+}
+
+.content-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-shrink: 4;
+    flex-grow: 2;
+    // flex-basis: auto;
+    overflow-y: scroll;
+}
+
+.navbar {
+  height: inherit;
+  width: inherit;
+  background-color: var(--global-mask-color);
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  padding: 5%;
+  padding-left: 10%;
+  padding-top: 10%;
+
+  .navbar-foot {
+    justify-content: center;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  // align-items: stretch;
+  padding: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  flex: 1 1 0;
+  transition: all 0.4s;
+}
+
+footer {
+  border-top: 1px solid $grey-color-light;
+  padding: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // padding-left: 10px;
+  // padding-right: 5px;
 }
