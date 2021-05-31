@@ -1,7 +1,7 @@
 <header>
   <div class="navbar-bg">
     <nav id="navbar" class="navbar navbar-light navbar-nav">
-        <div class="navbar-menu">
+        <div>
           {% if page.title != "about" %}
           <h4><a href="/">
            {% if site.title == blank %}{{ site.title }}{% else %}<span class="title">{{ site.first_name }}</span> {{ site.last_name }}{% endif %}
@@ -42,7 +42,7 @@
           {% endif %}
           {% endfor %}
         </div>
-        <div class="navbar-footer">
+        <div>
           {% if site.show_social_icons %}
             <!-- Social Icons -->
               {% include social.html %}
