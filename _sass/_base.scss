@@ -108,65 +108,58 @@ a, table.table a {
   }
 }
 
-// .navbar-toggler {
-//   .icon-bar {
-//     display: block;
-//     width: 22px;
-//     height: 2px;
-//     background-color: var(--global-icon-color);
-//     border-radius: 1px;
-//     margin-bottom: 4px;
-//     transition: all 0.2s;
-//   }
-//   .top-bar {
-//     transform: rotate(45deg);
-//     transform-origin: 10% 10%;
-//   }
-//   .middle-bar {
-//     opacity: 0;
-//   }
-//   .bottom-bar {
-//     transform: rotate(-45deg);
-//     transform-origin: 10% 90%;
-//   }
-// }
-//
-// .navbar-toggler.collapsed {
-//   .top-bar {
-//     transform: rotate(0);
-//   }
-//   .middle-bar {
-//     opacity: 1;
-//   }
-//   .bottom-bar {
-//     transform: rotate(0);
-//   }
-// }
-//
-// #sidebar ul li.active>a,
-// a[aria-expanded="true"] {
-// color: #fff;
-// background: #1b1d24;
-// }
-//
-// a[data-toggle="collapse"] {
-// position: relative;
-// }
-//
-// .dropdown-toggle::after {
-// display: block;
-// position: absolute;
-// top: 50%;
-// right: 20%;
-// transform: translateY(-50%);
-// }
+.toggler-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1% 2% 0% 1%;
 
-// ul ul a {
-//   font-size: 0.9em !important;
-//   padding-left: 30px !important;
-//   background: #1b1d24;
-//   text-align: right;
-// }
+  a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .toggler-bar {
+    padding: 10% 5% 0% 5%;
+  }
+}
+
+.navbar-toggler {
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--global-icon-color);
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}
+
+.navbar-toggler.collapsed {
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
 
 #content h2 {
   text-align: left;
@@ -187,24 +180,6 @@ a, table.table a {
 .news table th {
   color: var(--global-text-color);
 }
-
-// Social (bottom)
-
-// .social {
-//   text-align: center;
-//   .contact-icon {
-//     font-size: 4rem;
-//     a {
-//       color: var(--global-text-color);
-//       &:hover {
-//         color: var(--global-theme-color);
-//       }
-//     }
-//   }
-//   .contact-note {
-//     font-size: 0.8rem;
-//   }
-// }
 
 
 // Footer

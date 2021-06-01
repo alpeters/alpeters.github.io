@@ -1,12 +1,21 @@
 <header>
   <div class="navbar-bg">
-    <nav id="navbar" class="navbar navbar-light navbar-nav">
-        <div>
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light navbar-nav">
+      <div class="toggler-bar">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
           {% if page.title != "about" %}
           <h4><a href="/">
            {% if site.title == blank %}{{ site.title }}{% else %}<span class="title">{{ site.first_name }}</span> {{ site.last_name }}{% endif %}
           </a></h4>
           {% endif %}
+      </div>
+      <div class="navbar-menu collapse navbar-collapse" id="navbarNav">
+        <div>
           <!-- About -->
           <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
@@ -41,8 +50,9 @@
           </li>
           {% endif %}
           {% endfor %}
+          <!-- <p class="invisible"> allen peters allen peters</p> -->
         </div>
-        <div>
+        <div class="align-self-center">
           {% if site.show_social_icons %}
             <!-- Social Icons -->
               {% include social.html %}
@@ -56,6 +66,7 @@
             </div>
           {% endif %}
         </div>
+      </div>
     </nav>
   </div>
 </header>
